@@ -1,0 +1,158 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#div1 {
+    flex: 1;    
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    text-align: center;
+}
+
+#div2 {
+    padding-top: 10px;    
+    border-radius: 5px;
+    display: flex;
+    flex: 2;    
+}
+
+#div2-izquierda {
+    flex: 2;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+}
+
+#div2-derecha {
+    margin-left: 10px;
+    flex: 7;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+}
+
+.logo {
+    width: 20%;
+}
+
+input, select {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+#botonesDiv {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.boton {
+    padding: 10px;
+    background-color: #3498db; /* Azul */
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 90%;
+}
+
+.boton:hover {
+    background-color: #2980b9;
+}
+
+/* CSS PARA MAIN-APLICACIONES */
+
+ /* Estilo para elementos de lista con clase "eliminado" */
+ .eliminado {
+    opacity: 0.5;
+    text-decoration: underline;
+    color: gray;
+}
+
+/* Estilo para elementos de lista con clase "bloqueado" */
+.bloqueado {
+    text-decoration: underline;
+    color: red;
+}
+
+button {
+    padding: 5px;
+    background-color: #3498db; /* Azul */
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3; /* Azul más oscuro al pasar el mouse */
+}
+
+li {
+    margin-top: 5px;
+}
+
+.div2-derecha-app {
+    flex: 1;
+}
+
+.div2-izquierda-app {
+    flex: 1;
+}
+
+.div2-app {
+    display: flex;
+    flex: 2;    
+}
+
+.s-adjust {
+    font-size: 16px; 
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    text-align: left;
+    line-height: 50px;
+}
+
+/* MENSAJES */
+
+.form-mensaje {
+    margin-left: 30px;
+}
+
+/* BLOQUEO */
+
+.button-bloqueo {
+    display: block;
+    width: 150px; /* Ancho de los botones */
+    height: 40px; /* Altura de los botones */
+    margin-bottom: 10px; /* Espacio entre los botones */
+}
+
+.div-align {
+    margin-left: 30px;
+}
+
+/* UBICACICON MAIN*/
+
+.ubicacion {
+    width: 100%;
+}

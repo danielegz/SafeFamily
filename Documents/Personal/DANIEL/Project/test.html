@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bloquear Equipo</title>
+    <style>
+        /* Estilo para los botones */
+        button {
+            display: block;
+            width: 150px; /* Ancho de los botones */
+            height: 40px; /* Altura de los botones */
+            margin-bottom: 10px; /* Espacio entre los botones */
+        }
+    </style>
+</head>
+<body>
+    <h1>¿Por qué quieres bloquear el equipo?</h1>
+    <p>Selecciona una razón:</p>
+    <button id="robo">Robo</button>
+    <button id="perdida">Perdida</button>
+    <button id="bloqueoParental">Bloqueo Parental</button>
+
+    <script>
+        // Función para mostrar un mensaje de confirmación personalizado
+        function mostrarConfirmacion(mensaje) {
+            return confirm(mensaje);
+        }
+
+        // Agrega eventos click a los botones con mensajes de confirmación personalizados
+        document.getElementById('robo').addEventListener('click', function() {
+            var confirmacion = mostrarConfirmacion('¿Estás seguro de que quieres bloquear el equipo debido a un robo?');
+            if (confirmacion) {
+                alert('Equipo bloqueado debido a un robo.');
+            }
+        });
+
+        document.getElementById('perdida').addEventListener('click', function() {
+            var confirmacion = mostrarConfirmacion('¿Estás seguro de que quieres bloquear el equipo debido a una pérdida?');
+            if (confirmacion) {
+                alert('Equipo bloqueado debido a una pérdida.');
+            }
+        });
+
+        document.getElementById('bloqueoParental').addEventListener('click', function() {
+            var confirmacion = mostrarConfirmacion('¿Estás seguro de que quieres aplicar un bloqueo parental en el equipo?');
+            if (confirmacion) {
+                alert('Bloqueo parental aplicado en el equipo.');
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Principal</title>
+    <link rel="stylesheet" href="styles-main.css">
+</head>
+<body>
+    <div id="div1">
+        <img src="logo1.JPG" alt="Login" class="logo">
+        <h3>Seleccione el integrante: </h3>
+        <select id="nombres" name="nombres">
+        <option value="luis_carlos">Luis Carlos</option>
+        <option value="maria_claudia">Maria Claudia</option>
+        <option value="jose_maria">Jose Maria</option>
+        </select>
+    </div>
+    <div id="div2">
+        <div id="div2-izquierda">
+            <div id="botonesDiv">
+                <button class="boton" id="B_localizar">Localizar</button>
+                <button class="boton" id="B_mensajes">Enviar Mensajes</button>
+                <button class="boton" id="B_archivos">Acceder a archivos</button>
+                <button class="boton" id="B_aplicaciones">Aplicaciones instaladas</button>
+                <button class="boton" id="B_remoteview">Vista Remota</button>
+                <button class="boton" id="B_bloquear">Bloquear</button>
+            </div>
+        </div>
+        <div id="div2-derecha">
+            <h2>&nbsp&nbsp&nbsp&nbspLista de Aplicaciones</h2>
+            <ul id="listaAplicaciones">
+                <li>
+                    <span class="s-adjust">Whatsapp</span>
+                    <button class="eliminar">Eliminar</button>
+                    <button class="bloquear">Bloquear</button>
+                </li>
+                <li>
+                    <span class="s-adjust">Twitter</span>
+                    <button class="eliminar">Eliminar</button>
+                    <button class="bloquear">Bloquear</button>
+                </li>
+                <li>
+                    <span class="s-adjust">Instagram</span>
+                    <button class="eliminar">Eliminar</button>
+                    <button class="bloquear">Bloquear</button>
+                </li>
+            </ul>
+        
+            <div id="mensaje" style="display: none;"></div>
+                    
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
